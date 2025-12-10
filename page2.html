@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lack of Resources</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>Quality Education for All</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+
+        <!-- 🌙 LIGHT / DARK MODE SWITCH -->
+        <div id="theme-toggle" class="theme-switch">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </div>
+    </nav>
+</header>
+
+<section class="section">
+    <h2>Lack of Resources</h2>
+    <p>
+        One of the major challenges in achieving Quality Education is the lack of essential learning resources.
+        Many schools around the world, especially in rural and low-income communities, do not have enough books,
+        chairs, classrooms, computers, or internet access. This creates a huge barrier for students who want to learn
+        and for teachers who want to teach effectively.
+    </p>
+
+    <p>
+        Without proper materials, students struggle to understand lessons, fall behind, and lose motivation.
+        Addressing this challenge is important because access to resources directly affects the quality of education
+        and the future of young learners.
+    </p>
+
+    <h3>Examples of Missing Resources</h3>
+    <ul>
+        <li>Insufficient textbooks or shared books</li>
+        <li>Outdated computers or no technology at all</li>
+        <li>Damaged classrooms, broken chairs, and poor lighting</li>
+        <li>Lack of clean water and basic sanitation</li>
+        <li>Shortage of teaching tools (paper, markers, visual aids)</li>
+    </ul>
+
+    <br>
+
+    <div class="image-row">
+        <img src="p2.jpg" class="sub-img" alt="Image 1">
+        <img src="p1.jpg" class="sub-img" alt="Image 2">
+        <img src="p3.jpg" class="sub-img" alt="Image 3">
+    </div>
+
+    <br><br>
+
+    <!-- SOLUTIONS SECTION -->
+    <h2>Solutions to Lack of Resources</h2>
+    <p>
+        Even though many schools struggle with limited resources, there are effective solutions that individuals,
+        communities, and institutions can do to help improve the quality of education.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Community Fundraising</h3>
+            <p>
+                Parents, teachers, and local groups can organize donation drives to collect school supplies,
+                chairs, books, and learning materials for students.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Government & NGO Support</h3>
+            <p>
+                Local governments and charitable organizations can provide funding, new classrooms, modern equipment,
+                and training programs for teachers.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Technology Donations</h3>
+            <p>
+                Companies and individuals can donate used but functional laptops, tablets, and projectors to help
+                students access modern learning tools.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Local Partnerships</h3>
+            <p>
+                Schools can partner with businesses, universities, and youth groups to support classroom renovations,
+                tutoring, and community learning programs.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 Advocacy Project — Quality Education for All</p>
+</footer>
+
+<!-- 🌙 DARK MODE SCRIPT -->
+<script>
+    const toggle = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    toggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        // Save theme
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    });
+
+    // Load saved theme
+    if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+    }
+</script>
+
+</body>
+</html>

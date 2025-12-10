@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdated Environment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>Quality Education for All</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+		 <!-- 🌙 LIGHT / DARK MODE SWITCH -->
+        <div id="theme-toggle" class="theme-switch">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </div>
+    </nav>
+</header>
+
+<section class="section">
+    <h2>Outdated Learning Environments</h2>
+
+    <p>
+        Many schools around the world still struggle with outdated learning environments. These include old or damaged 
+        classrooms, broken chairs, limited teaching tools, poor ventilation, and unsafe building structures. Such 
+        environments make learning uncomfortable and reduce the student's ability to focus and succeed academically.
+    </p>
+
+    <p>
+        A good learning environment should be safe, clean, and equipped with modern educational tools. When students study 
+        in outdated spaces, their motivation drops, teachers struggle to teach effectively, and learning performance declines.
+    </p>
+
+    <h3>Common Problems in Outdated Environments</h3>
+    <ul>
+        <li>Cracked walls, leaking roofs, and unsafe classrooms</li>
+        <li>Old desks and chairs that are uncomfortable or broken</li>
+        <li>Limited lighting or poor ventilation</li>
+        <li>No computers, projectors, or updated learning tools</li>
+        <li>Crowded classrooms that make learning difficult</li>
+    </ul>
+
+    <br>
+
+
+    <div class="image-row">
+        <img src="p15.jpg" class="sub-img" alt="Classroom 1">
+        <img src="p16.jpg" class="sub-img" alt="Classroom 2">
+		
+		<figure class="img-box">
+        <img src="p20.jpg" class="sub-img" alt="Classroom 3">
+		 <figcaption>Photo by:Bantud-Managuit Elementary School</figcaption>
+    </figure>
+
+    </div>
+
+    <br><br>
+
+    <!-- SOLUTIONS SECTION -->
+    <h2>Solutions to Outdated Environments</h2>
+    <p>
+        Upgrading school environments is essential to improving education quality. Here are solutions that can help
+        create safe, modern, and inspiring learning spaces.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>School Renovation Programs</h3>
+            <p>
+                Governments and NGOs can fund the repair of classrooms, roofs, floors, and facilities to create safer
+                learning spaces.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Modern Classroom Equipment</h3>
+            <p>
+                Updating schools with new chairs, tables, whiteboards, and multimedia tools gives teachers and students 
+                better learning experiences.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Technology Upgrades</h3>
+            <p>
+                Providing computers, projectors, and internet access helps teachers improve lessons and allows students 
+                to explore digital learning resources.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Community Participation</h3>
+            <p>
+                Local volunteers, parents, and youth groups can help repaint classrooms, clean school grounds, or repair 
+                minor damage to improve the environment.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 Advocacy Project — Quality Education for All</p>
+</footer>
+
+<!-- 🌙 DARK MODE SCRIPT -->
+<script>
+    const toggle = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    toggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        // Save theme
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    });
+
+    // Load saved theme
+    if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+    }
+</script>
+
+</body>
+</html>
+

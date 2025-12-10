@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barriers for Marginalized Learners</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>Quality Education for All</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+		 <!-- 🌙 LIGHT / DARK MODE SWITCH -->
+        <div id="theme-toggle" class="theme-switch">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </div>
+    </nav>
+</header>
+
+<section class="section">
+    <h2>Barriers for Marginalized Learners</h2>
+
+    <p>
+        Marginalized learners include children who face discrimination or challenges because of disability,
+        poverty, gender, religion, ethnicity, geography, or conflict situations. These students often struggle 
+        more than others to access quality education. Many of them experience bullying, stigma, lack of proper
+        support, or limited access to learning materials.
+    </p>
+
+    <p>
+        Quality Education for all promotes inclusive education by ensuring that all learners—especially those who are marginalized—receive
+        equal opportunities to learn, grow, and succeed. Removing these barriers is essential for creating a fair and 
+        equitable education system.
+    </p>
+
+    <h3>Common Barriers for Marginalized Learners</h3>
+    <ul>
+        <li>Discrimination based on gender, disability, or ethnicity</li>
+        <li>Lack of ramps, support teachers, or accessible learning tools</li>
+        <li>Poverty preventing families from sending children to school</li>
+        <li>Language barriers for indigenous or migrant students</li>
+        <li>Unsafe environments caused by conflict or violence</li>
+    </ul>
+
+    <br>
+
+    <div class="image-row">
+	
+	  <figure class="img-box">
+        <img src="p27.png" class="sub-img" alt="Image 1">
+		 <figcaption>Photo by:kidshelpline</figcaption>
+    </figure>
+	
+        <img src="p3.jpg" class="sub-img" alt="Image 2">
+		
+		<figure class="img-box">
+        <img src="p28.jpg" class="sub-img" alt="Image 3">
+		 <figcaption>Photo by:shutterstock</figcaption>
+    </figure>
+	
+    </div>
+
+    <br><br>
+
+    <!-- SOLUTIONS SECTION -->
+    <h2>Solutions to Support Marginalized Learners</h2>
+    <p>
+        Schools and communities must work together to create more inclusive learning environments.
+        Here are solutions that help break barriers and promote equal opportunities for all students.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Inclusive Education Programs</h3>
+            <p>
+                Schools can provide speech therapists, special education teachers, and accessible materials tailored
+                to the needs of learners with disabilities.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Anti-Discrimination Policies</h3>
+            <p>
+                Enforcing school rules against bullying and discrimination ensures a safe and welcoming environment
+                for every student.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Support for Indigenous & Minority Students</h3>
+            <p>
+                Offering language support, culturally relevant lessons, and community involvement helps improve
+                engagement and understanding.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Financial & Social Support Programs</h3>
+            <p>
+                Scholarships, school feeding programs, and free learning materials help children from low-income
+                families stay in school.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 Advocacy Project — Quality Education for All</p>
+</footer>
+
+<!-- 🌙 DARK MODE SCRIPT -->
+<script>
+    const toggle = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    toggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        // Save theme
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    });
+
+    // Load saved theme
+    if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+    }
+</script>
+
+</body>
+</html>
+

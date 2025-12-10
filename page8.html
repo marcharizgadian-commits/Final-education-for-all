@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Communities Can Help</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>Quality Education for All</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+		 <!-- 🌙 LIGHT / DARK MODE SWITCH -->
+        <div id="theme-toggle" class="theme-switch">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </div>
+    </nav>
+</header>
+
+<section class="section">
+    <h2>How Communities Can Help Improve Quality Education</h2>
+
+    <p>
+        Communities play a powerful role in shaping the success of education.  
+        When people in a community work together, they can create safe, supportive,  
+        and resourceful environments that help children learn and grow.
+    </p>
+
+    <p>
+        Community involvement strengthens schools, motivates students, and ensures that  
+        education becomes everyone's shared responsibility, not just the school's.
+    </p>
+
+    <h3>Ways Communities Can Help</h3>
+    <ul>
+        <li>Organize donation drives for books and school materials</li>
+        <li>Create community study centers or reading corners</li>
+        <li>Support school activities and cleanliness drives</li>
+        <li>Provide safe pathways and transportation assistance for students</li>
+        <li>Promote awareness about the importance of education</li>
+    </ul>
+
+    <br>
+
+    <div class="image-row">
+	
+	
+	<figure class="img-box">
+        <img src="p22.jpg" class="sub-img" alt="Community Image 1">
+		<figcaption>Photo by:Bantud Managuit-Elementary School</figcaption>
+    </figure>  
+	
+	<figure class="img-box">
+        <img src="p26.jpg" class="sub-img" alt="Community Image 2">
+		<figcaption>Photo by:Bantud Managuit-Elementary School</figcaption>
+    </figure> 
+		
+		<figure class="img-box">
+        <img src="p25.jpg" class="sub-img" alt="Community Image 3">
+		<figcaption>Photo by:Bantud Managuit-Elementary School</figcaption>
+    </figure> 
+    </div>
+
+    <br><br>
+
+    <!-- SOLUTIONS / ACTION SECTION -->
+    <h2>Practical Actions Communities Can Do</h2>
+    <p>
+        Communities have the power to uplift education through cooperation and shared efforts.  
+        Here are effective ways to support qulality education for all locally.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Build Community Learning Spaces</h3>
+            <p>
+                Communities can provide local reading centers, tutoring areas, or  
+                quiet spaces where students can study safely.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Organize Educational Events</h3>
+            <p>
+                Conducting workshops, storytelling sessions, and learning programs  
+                inspires children and enhances their skills.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Safety & Support Programs</h3>
+            <p>
+                Communities can help create safe routes to school, escort younger  
+                kids, or assist families who struggle with transportation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Partnership with Local Schools</h3>
+            <p>
+                Working with schools through clean-up drives, volunteer work,  
+                and resource sharing strengthens the overall education system.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 Advocacy Project — Quality Education for All</p>
+</footer>
+
+<!-- 🌙 DARK MODE SCRIPT -->
+<script>
+    const toggle = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    toggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        // Save theme
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    });
+
+    // Load saved theme
+    if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+    }
+</script>
+
+</body>
+</html>

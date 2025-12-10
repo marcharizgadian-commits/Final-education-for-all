@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Schools Can Help</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>Quality Education for All</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+		 <!-- 🌙 LIGHT / DARK MODE SWITCH -->
+        <div id="theme-toggle" class="theme-switch">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </div>
+    </nav>
+</header>
+
+<section class="section">
+    <h2>How Schools Can Help Improve Quality Education</h2>
+
+    <p>
+        Schools play a vital role in achieving SDG 4: Quality Education for All.  
+        They have the power to promote inclusivity, strengthen teaching strategies,  
+        modernize learning environments, and ensure every child receives fair and meaningful education.
+    </p>
+
+    <p>
+        Through effective planning, supportive leadership, and strong collaboration,  
+        schools can create safe, accessible, and inspiring learning environments that encourage success.
+    </p>
+
+    <h3>Ways Schools Can Help</h3>
+    <ul>
+        <li>Provide training programs for teachers</li>
+        <li>Promote inclusive and supportive learning environments</li>
+        <li>Improve school facilities and teaching materials</li>
+        <li>Encourage parent and community involvement</li>
+        <li>Implement strong anti-bullying and equality policies</li>
+    </ul>
+
+    <br>
+
+    <div class="image-row">
+	
+	<figure class="img-box">
+        <img src="p10.jpg" class="sub-img" alt="School Image 1">
+		 <figcaption>Photo by:Bantud Managuit-Elementary School</figcaption>
+    </figure> 
+	
+	<figure class="img-box">
+        <img src="p12.jpg" class="sub-img" alt="School Image 2">
+		 <figcaption>Photo by:Bantud Managuit-Elementary School</figcaption>
+    </figure>  
+	
+	<figure class="img-box">
+        <img src="p21.jpg" class="sub-img" alt="School Image 3">
+		 <figcaption>Photo by:thenation.com</figcaption>
+    </figure> 
+    </div>
+
+    <br><br>
+
+    <!-- SOLUTIONS / ACTION SECTION -->
+    <h2>Practical Actions Schools Can Do</h2>
+    <p>
+        Here are practical actions schools can take to support inclusive, equitable,  
+        and high-quality education for all students.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Teacher Development</h3>
+            <p>
+                Schools can provide workshops, training, and seminars that help teachers  
+                improve their skills and stay updated with modern teaching techniques.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Inclusive Classrooms</h3>
+            <p>
+                Schools can offer support for children with disabilities, including  
+                assistive tools, special education teachers, and accessible facilities.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Improved Learning Materials</h3>
+            <p>
+                Ensuring that students have access to updated books, visual aids,  
+                technology, and multimedia tools enhances classroom learning.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Strong School Community</h3>
+            <p>
+                Encouraging teamwork between teachers, parents, and local groups  
+                helps build a supportive and active learning community.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 Advocacy Project — Quality Education for All</p>
+</footer>
+
+<!-- 🌙 DARK MODE SCRIPT -->
+<script>
+    const toggle = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    toggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        // Save theme
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    });
+
+    // Load saved theme
+    if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+    }
+</script>
+
+</body>
+</html>

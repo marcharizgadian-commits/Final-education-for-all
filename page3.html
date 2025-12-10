@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unequal Opportunities</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>Quality Education for All</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+		
+		 <!-- 🌙 LIGHT / DARK MODE SWITCH -->
+        <div id="theme-toggle" class="theme-switch">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </div>
+    </nav>
+</header>
+
+    </nav>
+</header>
+
+<section class="section">
+    <h2>Unequal Opportunities</h2>
+
+    <p>
+        Many students around the world do not receive the same learning opportunities due to differences in wealth,
+        location, gender, disability, or cultural background. Some children attend well-equipped schools, while others
+        study in overcrowded classrooms or incomplete buildings, making it difficult for them to succeed.
+    </p>
+
+    <p>
+        Unequal opportunities in education can lead to long-term disadvantages such as poor academic performance,
+        limited job prospects, and higher chances of remaining in poverty. Quality of Education for All aims to remove these barriers and
+        ensure that all learners—no matter who they are—receive quality and fair education.
+    </p>
+
+    <h3>Common Causes of Unequal Opportunities</h3>
+    <ul>
+        <li>Poor families unable to afford school supplies</li>
+        <li>Rural areas lacking transportation or nearby schools</li>
+        <li>Gender discrimination preventing girls from attending school</li>
+        <li>Children with disabilities lacking proper support</li>
+        <li>Lack of internet or digital devices for online learning</li>
+    </ul>
+
+    <br>
+
+   <div class="image-row">
+
+    <figure class="img-box">
+        <img src="p9.jpg" class="sub-img" alt="Image 1">
+        <figcaption>Photo by: Chatgpt</figcaption>
+    </figure>
+
+    <figure class="img-box">
+        <img src="p13.jpg" class="sub-img" alt="Image 2">
+        <figcaption>Photo by: Chatgpt</figcaption>
+    </figure>
+
+    <figure class="img-box">
+        <img src="p14.jpg" class="sub-img" alt="Image 3">
+        <figcaption>Photo by:Bantud-Managuit Elementary School</figcaption>
+    </figure>
+
+</div>
+
+
+    <br><br>
+
+    <!-- SOLUTIONS SECTION -->
+    <h2>Solutions to Unequal Opportunities</h2>
+    <p>
+        There are many ways communities and institutions can make learning more inclusive and accessible for everyone.
+        Below are some solutions that help create fairer education opportunities for all learners.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Scholarship & Financial Support</h3>
+            <p>
+                Governments, NGOs, and private organizations can offer scholarships or free school supplies for
+                students in need, helping them stay in school.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Accessible Schools in Rural Areas</h3>
+            <p>
+                Building more schools in remote communities reduces long travel distances and allows children to learn
+                safely and comfortably.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Inclusive Education Programs</h3>
+            <p>
+                Schools can provide special support for students with disabilities, including ramps, tutors, and
+                learning materials designed for their needs.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Digital Learning Access</h3>
+            <p>
+                Expanding access to internet, gadgets, and learning platforms helps students continue their education
+                even during emergencies or distance learning.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 Advocacy Project — Quality Education for All</p>
+</footer>
+
+
+<!-- 🌙 DARK MODE SCRIPT -->
+<script>
+    const toggle = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    toggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        // Save theme
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    });
+
+    // Load saved theme
+    if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Education for All</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- BACKGROUND IMAGE ONLY FOR INDEX PAGE -->
+ <style>
+    body.home-bg {
+        background-image: url("background.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #f5f5f5; /* LIGHT TEXT FOR DARK BACKGROUND */
+    }
+
+    /* Lighten all text inside hero + sections */
+    .hero-text h2,
+    .hero-text p,
+    .section h2,
+    .section p,
+    nav h1,
+    nav ul li a {
+        color: #ffffff !important;
+    }
+
+    /* Buttons stand out better */
+    .btn,
+    .action-btn {
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid #fff;
+    }
+
+    /* Cards readable on dark background */
+    .card {
+        background: rgba(255, 255, 255, 0.15);
+        color: white;
+        border: 1px solid rgba(255,255,255,0.4);
+        backdrop-filter: blur(4px);
+    }
+</style>
+
+</head>
+
+<!-- APPLY BACKGROUND CLASS HERE -->
+<body class="home-bg">
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <h1>Quality Education for All</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#challenges">Challenges</a></li>
+                <li><a href="#actions">Take Action</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Building a Future Through Quality Education</h2>
+            <p>Learn what quality education means and why it is essential for personal and societal development.</p>
+            <a href="#about" class="btn">Explore More</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+        <h2>What is Quality Education?</h2>
+        <p>
+            Quality education ensures that every learner acquires the knowledge, skills, and values needed 
+            to live productive and fulfilling lives. It promotes equality, empowers communities, and 
+            supports lifelong learning.
+        </p>
+        <p>
+            Quality Educantion for All focuses on ensuring inclusive and equitable education for all, addressing barriers 
+            that prevent millions of learners from accessing proper learning environments.
+        </p>
+    </section>
+
+    <!-- CHALLENGES SECTION -->
+    <section class="section challenges" id="challenges">
+        <h2>Global Challenges in Education</h2>
+
+        <div class="cards">
+
+            <div class="card" onclick="window.location.href='page2.html'">
+                <h3>Lack of Resources</h3>
+                <p>Many schools lack books, technology, trained teachers, and safe classrooms. (Click to learn more)</p>
+            </div>
+
+            <div class="card" onclick="window.location.href='page3.html'">
+                <h3>Unequal Opportunities</h3>
+                <p>Students from poor or rural areas have limited access to quality learning. (Click to learn more)</p>
+            </div>
+
+            <div class="card" onclick="window.location.href='page4.html'">
+                <h3>Outdated Environments</h3>
+                <p>Old learning materials and overcrowded rooms affect student performance. (Click to learn more)</p>
+            </div>
+
+            <div class="card" onclick="window.location.href='page5.html'">
+                <h3>Barriers for Marginalized Learners</h3>
+                <p>Children with disabilities, minorities, and girls often face discrimination in education. (Click to learn more)</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ACTION SECTION -->
+    <section class="section" id="actions">
+        <h2>How You Can Help</h2>
+        <p>Here are simple actions that individuals, schools, and communities can take to support Quality Educantion for All.</p>
+
+        <div class="action-list">
+            <button class="action-btn" onclick="window.location.href='page6.html'">For Individuals</button>
+            <button class="action-btn" onclick="window.location.href='page7.html'">For Schools</button>
+            <button class="action-btn" onclick="window.location.href='page8.html'">For Communities</button>
+        </div>
+
+        <div id="action-output" class="action-output">
+            <p>Click a button to see action steps!</p>
+        </div>
+
+    </section>
+	
+	<section class="section" id="quiz">
+    <h2>Quick Quiz: What Did You Learn?</h2>
+
+    <div class="quiz-box">
+        <p id="quiz-question">Loading question...</p>
+
+        <div id="quiz-options"></div>
+
+        <button id="next-btn" class="btn" style="display:none;">Next</button>
+    </div>
+
+    <p id="quiz-score"></p>
+</section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Advocacy Project — Quality Education for All</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

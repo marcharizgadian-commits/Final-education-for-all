@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Individuals Can Help</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>Quality Education for All</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+		 <!-- 🌙 LIGHT / DARK MODE SWITCH -->
+        <div id="theme-toggle" class="theme-switch">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </div>
+    </nav>
+</header>
+
+<section class="section">
+    <h2>How Individuals Can Help Improve Quality Education</h2>
+
+    <p>
+        Individuals play an important role in quality education for all: Quality Education for All.
+        Simple actions no matter how small—can make a big difference in improving learning conditions,
+        helping students, and spreading awareness in communities.
+    </p>
+
+    <p>
+        From donating school materials to volunteering time, individuals can help make education more
+        inclusive, accessible, and meaningful for every child.
+    </p>
+
+    <h3>Ways Individuals Can Help</h3>
+    <ul>
+        <li>Donate books, school supplies, or old functional gadgets</li>
+        <li>Volunteer as a tutor or help with school activities</li>
+        <li>Spread awareness about the importance of education</li>
+        <li>Support children from low-income families</li>
+        <li>Advocate for equal learning opportunities in your community</li>
+    </ul>
+
+    <br>
+
+    <div class="image-row">
+    <img src="p5.jpg" class="sub-img" alt="Helping 1">
+    <img src="p6.jpg" class="sub-img" alt="Helping 2">
+    <img src="p7.jpg" class="sub-img" alt="Helping 3">
+</div>
+
+<br>
+
+
+    <br><br>
+
+    <!-- SOLUTIONS / ACTION SECTION -->
+    <h2>Practical Actions Individuals Can Do</h2>
+    <p>
+        Below are practical actions that individuals can do to directly support SDG 4.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Donate School Materials</h3>
+            <p>
+                Even small donations like notebooks, pencils, and used books can help students who lack basic supplies.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Volunteer Time</h3>
+            <p>
+                Individuals can tutor children, organize reading sessions, or help teachers during school events.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Support Students in Need</h3>
+            <p>
+                Helping a student with transportation, snacks, or uniforms can significantly improve attendance.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Promote Education in the Community</h3>
+            <p>
+                Sharing information about the value of education encourages parents to prioritize learning for their children.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 Advocacy Project — Quality Education for All</p>
+</footer>
+
+<!-- 🌙 DARK MODE SCRIPT -->
+<script>
+    const toggle = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    toggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        // Save theme
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    });
+
+    // Load saved theme
+    if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+    }
+</script>
+
+</body>
+</html>

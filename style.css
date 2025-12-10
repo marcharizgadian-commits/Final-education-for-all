@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: #ff6f61;
+    padding: 15px 0;
+    color: white;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* HERO SECTION */
+.hero {
+    background: url('images/education.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.hero-text {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    color: #333;
+}
+
+.btn {
+    background: #ff6f61;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* SECTION STYLING */
+.section {
+    width: 90%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.section h2 {
+    font-size: 32px;
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fdf1d6;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #ffe3b3;
+}
+
+/* ACTION BUTTONS */
+.action-list {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.action-btn {
+    background: #6bcb77;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.action-btn:hover {
+    background: #55a864;
+}
+
+/* ACTION OUTPUT BOX */
+.action-output {
+    background: #e0f7fa;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+.sub-img {
+    width: 30%;
+}
+body {
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* DARK OVERLAY FOR BACKGROUND */
+body.home-bg::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55); /* adjust darkness: 0.3 = light, 0.7 = very dark */
+    z-index: -1;  /* stays behind everything */
+}
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img-box {
+    text-align: center;
+}
+
+.sub-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+}
+:root {
+    /* LIGHT MODE colors */
+    --bg-color: #f5f5f5;
+    --text-color: #222;
+}
+
+body.dark-mode {
+    --bg-color: #e0e0e0;   /* slightly darker background */
+    --text-color: #111;     /* text darkened in dark mode */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.3s ease-in-out;
+}
+
+/* Cute Toggle Button */
+.theme-switch {
+    cursor: pointer;
+    font-size: 26px;
+    margin-left: 20px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.theme-switch span {
+    transition: 0.2s;
+}
+
+body.dark-mode .sun {
+    opacity: 0.3;
+}
+
+body:not(.dark-mode) .moon {
+    opacity: 0.3;
+}
+/* Center the entire quiz section */
+#quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Center the quiz box */
+.quiz-box {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Center the question text */
+#quiz-question {
+    text-align: center;
+}
